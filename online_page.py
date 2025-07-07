@@ -15,7 +15,7 @@ class OnlineEvaluationPage:
         self.student_info = student_info
         self.root.title("Online Evaluation with DeepSeek R1")
         self.root.geometry("800x600")
-        self.api_key = "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" 
+        self.api_key = "ADD YOUR API KEY" 
         self.create_ui()
 
     def create_ui(self):
