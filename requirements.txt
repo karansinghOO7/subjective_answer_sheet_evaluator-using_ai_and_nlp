@@ -1,0 +1,82 @@
+📝 EduEvaluator – Automated Student Answer Sheet Evaluation System
+EduEvaluator is a desktop-based Python application that evaluates student answer sheets either offline or online. It uses OCR, NLP, and AI techniques for accurate and efficient grading.
+
+🚀 Features
+📄 Upload handwritten answer sheets (PDFs)
+
+🔍 Perform OCR using Tesseract
+
+🤖 Offline Evaluation using:
+
+BERT Embeddings + Cosine Similarity
+
+Word2Vec + Word Mover’s Distance (WMD)
+
+🌐 Online Evaluation using OpenRouter API (DeepSeek R1)
+
+🧠 Auto-grading based on question/answer matching
+
+🔒 Student login with roll number & DOB
+
+🖼️ GUI built with Tkinter
+
+🔧 Tech Stack
+Python
+
+Tkinter (GUI)
+
+PyMuPDF (PDF to image)
+
+Tesseract OCR
+
+Transformers (BERT)
+
+Gensim (Word2Vec)
+
+scikit-learn (Cosine Similarity)
+
+OpenAI/OpenRouter (DeepSeek R1 API)
+
+📂 Folder Structure
+
+major_project/
+├── main.py
+├── login_page.py
+├── student_details.py
+├── offline_page.py
+├── online_page.py
+├── assets/
+│   └── picture1.jpg
+├── models/
+│   └── GoogleNews-vectors-negative300.bin
+└── requirements.txt
+📥 Installation
+Clone the Repository:
+
+git clone https://github.com/your-username/eduevaluator.git
+cd eduevaluator
+Install Requirements:
+
+
+pip install -r requirements.txt
+Run the App:
+
+python main.py
+🧪 Sample Format
+Prefix each answer with ANS 1, ANS 2, ...
+
+OCR will auto-detect and separate answers using these markers.
+
+🔐 OpenRouter API Setup
+If using the online evaluation, get your API key from https://openrouter.ai and replace:
+
+self.api_key = "your_openrouter_api_key"
+📌 Notes
+Works best with clean scanned handwritten answer sheets.
+
+Requires internet for online (DeepSeek R1) evaluation.
+
+Google Word2Vec model should be placed at the correct path.
+
+🧑‍💻 Author
+Karan Singh – BTech CSE (2025)
